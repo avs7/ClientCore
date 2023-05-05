@@ -1,13 +1,14 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import Home from './pages/Home'
-import Dashboard from './pages/Dashboard'
+import Dashboard from './layouts/Dashboard'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import Summary from './components/Summary'
 import Contacts from './components/Contacts'
 import Calendar from './components/Calendar'
 import Tasks from './components/Tasks'
+import Sidebar from './layouts/Sidebar'
 
 const router = createBrowserRouter([
   {
@@ -15,12 +16,16 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/login',
+    path: 'login',
     element: <Login />,
   },
   {
-    path: '/sign-up',
+    path: 'sign-up',
     element: <SignUp />,
+  },
+  {
+    path: 'sidebar',
+    element: <Sidebar />,
   },
   {
     path: '/dashboard',
