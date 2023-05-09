@@ -31,12 +31,12 @@ export default function Navbar() {
                   <img
                     className='block h-8 w-auto lg:hidden'
                     src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
-                    alt='Your Company'
+                    alt='Client Core'
                   />
                   <img
                     className='hidden h-8 w-auto lg:block'
                     src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
-                    alt='Your Company'
+                    alt='Client Core'
                   />
                 </div>
                 <div className='hidden md:ml-6 md:flex md:space-x-8'>
