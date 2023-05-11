@@ -52,15 +52,6 @@ export default function Navbar() {
                     Dashboard
                   </NavLink>
                   <NavLink
-                    to='tasks'
-                    className={({ isActive }) =>
-                      `inline-flex items-center border-b-2 ${
-                        isActive ? 'border-indigo-500' : 'border-transparent'
-                      } px-1 pt-1 text-sm font-medium text-gray-900`
-                    }>
-                    Tasks
-                  </NavLink>
-                  <NavLink
                     to='contacts'
                     className={({ isActive }) =>
                       `inline-flex items-center border-b-2 ${
@@ -70,13 +61,22 @@ export default function Navbar() {
                     Contacts
                   </NavLink>
                   <NavLink
-                    to='calendar'
+                    to='tasks'
                     className={({ isActive }) =>
                       `inline-flex items-center border-b-2 ${
                         isActive ? 'border-indigo-500' : 'border-transparent'
                       } px-1 pt-1 text-sm font-medium text-gray-900`
                     }>
-                    Calendar
+                    Tasks
+                  </NavLink>
+                  <NavLink
+                    to='notes'
+                    className={({ isActive }) =>
+                      `inline-flex items-center border-b-2 ${
+                        isActive ? 'border-indigo-500' : 'border-transparent'
+                      } px-1 pt-1 text-sm font-medium text-gray-900`
+                    }>
+                    Notes
                   </NavLink>
                 </div>
               </div>
@@ -177,16 +177,6 @@ export default function Navbar() {
                   Dashboard
                 </NavLink>
                 <NavLink
-                  to='tasks'
-                  className={({ isActive }) =>
-                    isActive
-                      ? 'block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 sm:pl-5 sm:pr-6'
-                      : 'block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6'
-                  }
-                  onClick={close}>
-                  Tasks
-                </NavLink>
-                <NavLink
                   to='contacts'
                   className={({ isActive }) =>
                     isActive
@@ -197,14 +187,24 @@ export default function Navbar() {
                   Contacts
                 </NavLink>
                 <NavLink
-                  to='calendar'
+                  to='tasks'
                   className={({ isActive }) =>
                     isActive
                       ? 'block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 sm:pl-5 sm:pr-6'
                       : 'block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6'
                   }
                   onClick={close}>
-                  Calendar
+                  Tasks
+                </NavLink>
+                <NavLink
+                  to='notes'
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 sm:pl-5 sm:pr-6'
+                      : 'block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6'
+                  }
+                  onClick={close}>
+                  Notes
                 </NavLink>
               </div>
             )}

@@ -1,3 +1,5 @@
+import NoteList from '../components/notes/NoteList'
+
 export default function Notes() {
-  return <h1>Notes page</h1>
+  return <NoteList />
 }
