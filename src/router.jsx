@@ -6,7 +6,7 @@ import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import Summary from './pages/Summary'
 import Contacts from './pages/Contacts'
-import Calendar from './pages/Calendar'
+import Notes from './pages/Notes'
 import TaskList from './components/tasks/TaskList'
 import TaskDetails from './components/tasks/TaskDetails'
 
@@ -46,8 +46,8 @@ const router = createBrowserRouter([
         element: <Contacts />,
       },
       {
-        path: 'calendar',
-        element: <Calendar />,
+        path: 'notes',
+        element: <Notes />,
       },
     ],
   },

@@ -11,8 +11,6 @@ export default function TaskDetails() {
     setTask(sampleTasks.find(t => t.id === params.id))
   }, [params.id])
 
-  console.log(task)
-
   return (
     <div>
       <div className='px-4 sm:px-0 pt-6'>
