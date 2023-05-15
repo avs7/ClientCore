@@ -13,7 +13,7 @@ export default function ContactDetails() {
   return (
     <>
       <h3> Contact Details Page</h3>
-      <h1>{contact.first_name}</h1>
+      <h1>{contact?.first_name}</h1>
       {/* https://tailwindui.com/components/application-ui/page-examples/detail-screens?include=archived */}
     </>
   )

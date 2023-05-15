@@ -15,7 +15,7 @@ export default function TaskDetails() {
     <div>
       <div className='px-4 sm:px-0 pt-6'>
         <h1 className='text-lg font-bold leading-7 text-gray-900'>
-          {task.title}
+          {task?.title}
         </h1>
       </div>
       <div className='mt-6 border-t border-gray-100'>
@@ -25,7 +25,7 @@ export default function TaskDetails() {
               Contact
             </dt>
             <dd className='mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0'>
-              {task.contact}
+              {task?.contact}
             </dd>
           </div>
           <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
@@ -33,7 +33,7 @@ export default function TaskDetails() {
               Status
             </dt>
             <dd className='mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0'>
-              {task.completed ? 'Completed' : 'Pending'}
+              {task?.completed ? 'Completed' : 'Pending'}
             </dd>
           </div>
           <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
@@ -41,7 +41,7 @@ export default function TaskDetails() {
               Due date
             </dt>
             <dd className='mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0'>
-              {task.dueDate}
+              {task?.dueDate}
             </dd>
           </div>
           <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
@@ -49,7 +49,7 @@ export default function TaskDetails() {
               Priority
             </dt>
             <dd className='mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0'>
-              {task.priority}
+              {task?.priority}
             </dd>
           </div>
           <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>
@@ -57,7 +57,7 @@ export default function TaskDetails() {
               Details
             </dt>
             <dd className='mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0'>
-              {task.details}
+              {task?.details}
             </dd>
           </div>
           <div className='px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0'>

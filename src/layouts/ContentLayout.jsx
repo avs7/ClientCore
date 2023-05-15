@@ -1,9 +1,10 @@
 import { FunnelIcon, MagnifyingGlassIcon } from '@heroicons/react/20/solid'
-import { Outlet } from 'react-router-dom'
-import ContactList from '../components/contacts/ContactList'
+import PropTypes from 'prop-types'
 
 ContentLayout.propTypes = {
-  contentType: 
+  contentType: PropTypes.string,
+  contentList: PropTypes.element,
+  contentElement: PropTypes.element,
 }
 
 export default function ContentLayout({
@@ -17,7 +18,9 @@ export default function ContentLayout({
         <div className='flex min-w-0 flex-1 flex-col overflow-hidden'>
           <div className='relative z-0 flex flex-1 overflow-hidden'>
             <main className='relative z-0 flex-1 overflow-y-auto focus:outline-none xl:order-last'>
-              {contentElement}
+              <div className='mx-auto max-w-7xl sm:px-6 lg:px-8'>
+                {contentElement}
+              </div>
             </main>
             <aside className='hidden w-96 flex-shrink-0 border-r border-gray-200 xl:order-first xl:flex xl:flex-col'>
               <div className='px-6 pb-4 pt-6'>

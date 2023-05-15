@@ -1,11 +1,13 @@
+import ContentLayout from '../layouts/ContentLayout'
 import TaskList from '../components/tasks/TaskList'
-import { Outlet } from 'react-router-dom'
+import TaskDetails from '../components/tasks/TaskDetails'
 
 export default function Tasks() {
   return (
-    <div className='overflow-hidden rounded-md bg-white shadow'>
-      <TaskList />
-      <Outlet />
-    </div>
+    <ContentLayout
+      contentType={'Tasks'}
+      contentElement={<TaskDetails />}
+      contentList={<TaskList />}
+    />
   )
 }
