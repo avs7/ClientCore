@@ -8,7 +8,9 @@ import Summary from './pages/Summary'
 import Contacts from './pages/Contacts'
 import Notes from './pages/Notes'
 import TaskList from './components/tasks/TaskList'
+import Tasks from './pages/Tasks'
 import TaskDetails from './components/tasks/TaskDetails'
+import ContactDetails from './components/contacts/ContactDetails'
 
 const router = createBrowserRouter([
   {
@@ -33,17 +35,24 @@ const router = createBrowserRouter([
       },
       {
         path: 'tasks',
-        element: <TaskList />,
-      },
-
-      {
-        path: 'tasks/:id',
-        element: <TaskDetails />,
+        element: <Tasks />,
+        children: [
+          {
+            path: ':id',
+            element: <TaskDetails />,
+          },
+        ],
       },
 
       {
         path: 'contacts',
         element: <Contacts />,
+        children: [
+          {
+            path: ':id',
+            element: <ContactDetails />,
+          },
+        ],
       },
       {
         path: 'notes',

@@ -1,10 +1,11 @@
-
-import TaskList from '../components/TaskList'
+import TaskList from '../components/tasks/TaskList'
+import { Outlet } from 'react-router-dom'
 
 export default function Tasks() {
   return (
-    <div className='container flex mx-auto sm:px-6 lg:px-8'>
+    <div className='overflow-hidden rounded-md bg-white shadow'>
       <TaskList />
+      <Outlet />
     </div>
   )
 }

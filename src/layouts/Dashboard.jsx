@@ -7,7 +7,9 @@ export default function Dashboard() {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div className='mx-auto max-w-7xl sm:px-6 lg:px-8 p-2'>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )
