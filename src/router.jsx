@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp'
 import Summary from './pages/Summary'
 import Contacts from './pages/Contacts'
 import Notes from './pages/Notes'
+import NoteDetails from './components/notes/NoteDetails'
 import Tasks from './pages/Tasks'
 import TaskDetails from './components/tasks/TaskDetails'
 import ContactDetails from './components/contacts/ContactDetails'
@@ -56,6 +57,12 @@ const router = createBrowserRouter([
       {
         path: 'notes',
         element: <Notes />,
+        children: [
+          {
+            path: ':id',
+            element: <NoteDetails />,
+          },
+        ],
       },
     ],
   },

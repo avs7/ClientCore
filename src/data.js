@@ -214,3 +214,61 @@ export const sampleContacts = [
       'https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
 ]
+
+export const sampleNotes = [
+  {
+    title: "Last week's meeting",
+    details: 'Ea reprehenderit duis quis excepteur aliquip incididunt minim reprehenderit. Mollit reprehenderit sit culpa irure laboris anim deserunt enim adipisicing consectetur dolor reprehenderit labore. Magna dolor Lorem exercitation ex culpa in cupidatat eu Lorem in dolor et nulla.',
+    category: 'Meetings',
+    created_at: 'January 21, 1922',
+    updated_at: 'August 1, 2020',
+    contact_id: '2',
+    id: '1',
+  },
+  {
+    title: 'Birthday',
+    details: 'Consectetur dolore enim deserunt sunt pariatur deserunt dolor irure. Mollit laboris occaecat sint non exercitation occaecat amet do velit duis aliqua reprehenderit. Anim irure nostrud tempor tempor nostrud nisi mollit veniam mollit ad do minim. Enim eu sit aliqua culpa voluptate sint. Cillum duis aliqua non elit dolor dolore aute officia ex ea. Proident id minim culpa excepteur dolor commodo magna. Occaecat et incididunt ut Lorem voluptate sit minim sit incididunt cillum sunt officia.',
+    category: 'Events',
+    created_at: 'September 1, 1994',
+    updated_at: 'May 16, 2023',
+    contact_id: '4',
+    id: '2',
+  },
+  {
+    title: 'Go to school',
+    details: 'Duis amet fugiat ut nostrud reprehenderit minim non. Labore fugiat sit in est culpa exercitation eu dolor. Culpa reprehenderit nisi deserunt exercitation esse sint velit aliquip laborum do amet labore enim consequat. Ipsum quis occaecat pariatur exercitation proident dolore officia dolor aliquip pariatur exercitation dolor voluptate exercitation. Voluptate et ullamco laborum ullamco excepteur elit dolor exercitation officia esse. Elit labore dolor consequat aliquip est laboris commodo qui ut. Eiusmod cupidatat non dolor anim nulla nostrud qui veniam ullamco deserunt sit officia.',
+    category: 'Events',
+    created_at: 'January 21, 2023',
+    updated_at: 'August 19, 2023',
+    contact_id: '8',
+    id: '3',
+  },
+  {
+    title: 'Always do that',
+    details: 'Aute velit dolore commodo aute enim eiusmod ut Lorem amet Lorem. Et est est ut commodo aliqua. Consequat occaecat proident magna consequat eu et enim magna duis commodo aliquip labore tempor. Ipsum elit in nisi do consectetur minim ullamco qui est et nulla ea occaecat et. Ad voluptate sunt sint laboris ut irure aliquip ad ad ipsum esse ex.',
+    category: 'Advice',
+    created_at: 'January 21, 1922',
+    updated_at: 'August 1, 2020',
+    contact_id: '1`',
+    id: '4',
+  },
+  {
+    title: 'Never do this',
+    details: 'Ipsum ex consectetur in officia dolore in in ea aliqua enim cillum cillum. Sunt culpa consequat ea duis adipisicing deserunt dolor esse cillum in labore in. Velit ullamco aliqua nulla ullamco. Ut velit reprehenderit laboris culpa laboris aliquip qui dolore. Occaecat est irure laborum adipisicing sunt aliquip. Consectetur dolor laboris non id veniam in reprehenderit mollit officia qui voluptate commodo sunt. Nulla mollit do voluptate pariatur duis id laborum aliquip consequat ex elit eiusmod sit adipisicing.',
+    category: 'Advice',
+    created_at: 'February, 2022',
+    updated_at: 'August 1, 2022',
+    contact_id: '3',
+    id: '5',
+  },
+  {
+    title: 'How to do something',
+    details:
+      'Tempor magna nostrud dolore laboris minim sint nostrud ad duis eu quis. Proident dolore tempor ullamco culpa laborum mollit id magna velit esse qui. Do id deserunt in officia adipisicing et aute. Cupidatat et deserunt reprehenderit culpa nostrud pariatur id qui est ea. Exercitation minim labore adipisicing consequat quis. Exercitation et do velit qui ad adipisicing aliqua veniam sunt velit elit cupidatat.',
+    category: 'Meetings',
+    created_at: 'December 8, 1999',
+    updated_at: 'August 12, 2019',
+    contact_id: '2',
+    id: '6',
+  },
+]
