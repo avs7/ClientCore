@@ -23,7 +23,7 @@ export default function Tasks() {
                         {task.dueDate}
                       </p>
                     </Link>
-                    <div className='flex items-center  ml-40  opacity-0 group-hover:opacity-100'>
+                    <div className='flex items-center ml-auto  opacity-0 group-hover:opacity-100'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
                         fill='none'

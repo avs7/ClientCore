@@ -54,9 +54,13 @@ export const sampleContacts = [
     category: 'client',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Student',
+    organization: 'College University',
+    about:
+      'Incididunt magna tempor aliqua Lorem cupidatat dolore velit exercitation proident in exercitation eu proident culpa. Velit esse dolore pariatur sint esse dolor eu pariatur tempor tempor. Commodo consectetur mollit do pariatur duis adipisicing incididunt aute reprehenderit et anim. Tempor ipsum esse exercitation aliquip enim est occaecat. Minim qui dolore voluptate enim consectetur nulla mollit pariatur laborum anim minim sunt. Duis laborum ipsum ex aliquip anim dolore incididunt sint pariatur fugiat magna.',
     address: '123 fake St.',
     city: 'Real City',
-    state: 'Washington',
+    state: 'WA',
     zip_code: '99001',
     id: '1',
     imageUrl:
@@ -69,6 +73,10 @@ export const sampleContacts = [
     category: 'prospect',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Worker',
+    organization: 'Mega Corp',
+    about:
+      'Irure sunt velit ex ullamco occaecat esse quis enim adipisicing enim. Deserunt laborum dolor occaecat in enim cupidatat anim sint laboris do. Culpa ipsum labore do quis magna do occaecat incididunt ea exercitation est enim consectetur labore.',
     address: '123 fake St.',
     city: 'Sandpoint',
     state: 'Idaho',
@@ -84,9 +92,13 @@ export const sampleContacts = [
     category: 'prospect',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Supervisor',
+    organization: 'Mega Corp',
+    about:
+      'Non mollit proident reprehenderit velit sunt magna cillum sit dolore ea pariatur velit. Aute eu voluptate fugiat aliqua nostrud velit culpa veniam occaecat consectetur aute ad. Mollit dolor nulla ut culpa id enim cupidatat aliqua Lorem. Occaecat do in consequat excepteur est dolore. Reprehenderit elit labore duis occaecat anim sunt qui laborum laborum in dolor veniam cillum cupidatat. Ut non esse irure id reprehenderit minim adipisicing velit quis excepteur duis occaecat.',
     address: '123 fake St.',
     city: 'Seattle',
-    state: 'Washington',
+    state: 'WA',
     zip_code: '99001',
     id: '3',
     imageUrl:
@@ -99,9 +111,13 @@ export const sampleContacts = [
     category: 'client',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Worker',
+    organization: 'Mini Corp',
+    about:
+      'Deserunt fugiat aliquip enim adipisicing enim in culpa. Nulla anim mollit deserunt veniam cillum labore sunt excepteur reprehenderit. Dolor ullamco sit consectetur laborum labore ut aliquip ut magna id minim nisi fugiat labore. Commodo commodo culpa velit quis ea non ipsum occaecat sint. Laborum culpa reprehenderit magna cillum.',
     address: '123 fake St.',
     city: 'Portland',
-    state: 'Oregon',
+    state: 'OR',
     zip_code: '99001',
     id: '4',
     imageUrl:
@@ -114,9 +130,13 @@ export const sampleContacts = [
     category: 'vender',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Contractor',
+    organization: 'FedEx',
+    about:
+      'Nisi laborum amet non proident ea. Consequat laborum voluptate ipsum officia labore ullamco esse. Sint quis ad pariatur id sunt cupidatat labore do. Excepteur aute est anim velit elit ut mollit sunt in fugiat. Anim adipisicing qui labore ea sunt elit anim.',
     address: '123 fake St.',
     city: 'Real City',
-    state: 'Washington',
+    state: 'WA',
     zip_code: '99001',
     id: '5',
     imageUrl:
@@ -129,9 +149,13 @@ export const sampleContacts = [
     category: 'client',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Worker',
+    organization: 'Work Inc.',
+    about:
+      'Ullamco cupidatat veniam anim anim dolore sunt cupidatat. Sit nostrud ullamco aliquip occaecat. Dolore aliqua ex occaecat et esse ipsum et aute elit dolor tempor.',
     address: '123 fake St.',
     city: 'Real City',
-    state: 'Washington',
+    state: 'WA',
     zip_code: '99001',
     id: '6',
     imageUrl:
@@ -144,9 +168,13 @@ export const sampleContacts = [
     category: 'vender',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Dealer',
+    organization: 'Car Lot',
+    about:
+      'Consequat sint proident amet irure sunt cillum aute aliquip. Consequat anim culpa veniam eu veniam incididunt nulla in veniam adipisicing id. Magna voluptate irure voluptate dolore officia. Ipsum ex incididunt enim deserunt aliqua deserunt amet elit. Exercitation magna fugiat pariatur proident non elit do aliqua velit laboris. Tempor esse aliqua id non velit laborum pariatur labore ut non duis et. Aliqua voluptate qui excepteur aliqua cupidatat irure nisi et enim mollit dolore.',
     address: '123 fake St.',
     city: 'Real City',
-    state: 'Washington',
+    state: 'WA',
     zip_code: '99001',
     id: '7',
     imageUrl:
@@ -159,9 +187,13 @@ export const sampleContacts = [
     category: 'client',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Worker',
+    organization: 'Mega Corp',
+    about:
+      'Sit pariatur consequat in in enim ut minim. Est minim occaecat dolor ipsum excepteur esse irure ullamco. Mollit aute laboris est Lorem fugiat. Do laboris nulla eu quis ullamco deserunt Lorem velit consectetur ut quis labore est.',
     address: '123 fake St.',
     city: 'Real City',
-    state: 'Washington',
+    state: 'WA',
     zip_code: '99001',
     id: '8',
     imageUrl:
@@ -175,9 +207,13 @@ export const sampleContacts = [
     category: 'client',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Advisor',
+    organization: 'FBI',
+    about:
+      'Nulla anim ad nulla ullamco consequat dolore officia adipisicing commodo esse reprehenderit aliquip dolor. Labore consectetur minim nulla labore deserunt ex cillum fugiat non officia duis dolor est velit. Id ipsum magna officia labore ipsum Lorem ea excepteur incididunt ut enim veniam. Deserunt sint amet exercitation eiusmod occaecat consequat proident cupidatat. Do velit velit irure irure et velit et amet fugiat exercitation. Duis proident cupidatat laboris labore labore occaecat occaecat proident sunt ex ipsum mollit. Adipisicing ea in ea eu ullamco minim exercitation.',
     address: '123 fake St.',
     city: 'Where',
-    state: 'Texas',
+    state: 'TX',
     zip_code: '88220',
     id: '9',
     imageUrl:
@@ -190,9 +226,13 @@ export const sampleContacts = [
     category: 'client',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Agent',
+    organization: 'Super Secret Agents',
+    about:
+      'Id nostrud sunt ex enim do eu officia proident sunt commodo officia aute ullamco. Proident consectetur occaecat ipsum anim est nulla quis voluptate exercitation veniam aliqua ea ipsum eiusmod. Non sit mollit veniam duis in nisi pariatur velit elit non sint sit. In sit commodo consequat magna elit laboris. Et cillum sint in sunt sunt in dolor veniam nulla aliquip qui aliquip culpa ut. Ipsum nulla reprehenderit est nisi veniam. Nostrud nulla velit adipisicing commodo amet ipsum ullamco commodo pariatur.',
     address: '123 fake St.',
     city: 'Real City',
-    state: 'Washington',
+    state: 'WA',
     zip_code: '99001',
     id: '10',
     imageUrl:
@@ -205,9 +245,12 @@ export const sampleContacts = [
     category: 'client',
     phone: '(509) 555-6677',
     email: 'person@email.com',
+    position: 'Programmer',
+    organization: 'Codelots',
+    about: '',
     address: '123 fake St.',
     city: 'Real City',
-    state: 'Washington',
+    state: 'WA',
     zip_code: '99001',
     id: '11',
     imageUrl:
@@ -218,7 +261,8 @@ export const sampleContacts = [
 export const sampleNotes = [
   {
     title: "Last week's meeting",
-    details: 'Ea reprehenderit duis quis excepteur aliquip incididunt minim reprehenderit. Mollit reprehenderit sit culpa irure laboris anim deserunt enim adipisicing consectetur dolor reprehenderit labore. Magna dolor Lorem exercitation ex culpa in cupidatat eu Lorem in dolor et nulla.',
+    details:
+      'Ea reprehenderit duis quis excepteur aliquip incididunt minim reprehenderit. Mollit reprehenderit sit culpa irure laboris anim deserunt enim adipisicing consectetur dolor reprehenderit labore. Magna dolor Lorem exercitation ex culpa in cupidatat eu Lorem in dolor et nulla.',
     category: 'Meetings',
     created_at: 'January 21, 1922',
     updated_at: 'August 1, 2020',
@@ -227,7 +271,8 @@ export const sampleNotes = [
   },
   {
     title: 'Birthday',
-    details: 'Consectetur dolore enim deserunt sunt pariatur deserunt dolor irure. Mollit laboris occaecat sint non exercitation occaecat amet do velit duis aliqua reprehenderit. Anim irure nostrud tempor tempor nostrud nisi mollit veniam mollit ad do minim. Enim eu sit aliqua culpa voluptate sint. Cillum duis aliqua non elit dolor dolore aute officia ex ea. Proident id minim culpa excepteur dolor commodo magna. Occaecat et incididunt ut Lorem voluptate sit minim sit incididunt cillum sunt officia.',
+    details:
+      'Consectetur dolore enim deserunt sunt pariatur deserunt dolor irure. Mollit laboris occaecat sint non exercitation occaecat amet do velit duis aliqua reprehenderit. Anim irure nostrud tempor tempor nostrud nisi mollit veniam mollit ad do minim. Enim eu sit aliqua culpa voluptate sint. Cillum duis aliqua non elit dolor dolore aute officia ex ea. Proident id minim culpa excepteur dolor commodo magna. Occaecat et incididunt ut Lorem voluptate sit minim sit incididunt cillum sunt officia.',
     category: 'Events',
     created_at: 'September 1, 1994',
     updated_at: 'May 16, 2023',
@@ -236,7 +281,8 @@ export const sampleNotes = [
   },
   {
     title: 'Go to school',
-    details: 'Duis amet fugiat ut nostrud reprehenderit minim non. Labore fugiat sit in est culpa exercitation eu dolor. Culpa reprehenderit nisi deserunt exercitation esse sint velit aliquip laborum do amet labore enim consequat. Ipsum quis occaecat pariatur exercitation proident dolore officia dolor aliquip pariatur exercitation dolor voluptate exercitation. Voluptate et ullamco laborum ullamco excepteur elit dolor exercitation officia esse. Elit labore dolor consequat aliquip est laboris commodo qui ut. Eiusmod cupidatat non dolor anim nulla nostrud qui veniam ullamco deserunt sit officia.',
+    details:
+      'Duis amet fugiat ut nostrud reprehenderit minim non. Labore fugiat sit in est culpa exercitation eu dolor. Culpa reprehenderit nisi deserunt exercitation esse sint velit aliquip laborum do amet labore enim consequat. Ipsum quis occaecat pariatur exercitation proident dolore officia dolor aliquip pariatur exercitation dolor voluptate exercitation. Voluptate et ullamco laborum ullamco excepteur elit dolor exercitation officia esse. Elit labore dolor consequat aliquip est laboris commodo qui ut. Eiusmod cupidatat non dolor anim nulla nostrud qui veniam ullamco deserunt sit officia.',
     category: 'Events',
     created_at: 'January 21, 2023',
     updated_at: 'August 19, 2023',
@@ -245,7 +291,8 @@ export const sampleNotes = [
   },
   {
     title: 'Always do that',
-    details: 'Aute velit dolore commodo aute enim eiusmod ut Lorem amet Lorem. Et est est ut commodo aliqua. Consequat occaecat proident magna consequat eu et enim magna duis commodo aliquip labore tempor. Ipsum elit in nisi do consectetur minim ullamco qui est et nulla ea occaecat et. Ad voluptate sunt sint laboris ut irure aliquip ad ad ipsum esse ex.',
+    details:
+      'Aute velit dolore commodo aute enim eiusmod ut Lorem amet Lorem. Et est est ut commodo aliqua. Consequat occaecat proident magna consequat eu et enim magna duis commodo aliquip labore tempor. Ipsum elit in nisi do consectetur minim ullamco qui est et nulla ea occaecat et. Ad voluptate sunt sint laboris ut irure aliquip ad ad ipsum esse ex.',
     category: 'Advice',
     created_at: 'January 21, 1922',
     updated_at: 'August 1, 2020',
@@ -254,7 +301,8 @@ export const sampleNotes = [
   },
   {
     title: 'Never do this',
-    details: 'Ipsum ex consectetur in officia dolore in in ea aliqua enim cillum cillum. Sunt culpa consequat ea duis adipisicing deserunt dolor esse cillum in labore in. Velit ullamco aliqua nulla ullamco. Ut velit reprehenderit laboris culpa laboris aliquip qui dolore. Occaecat est irure laborum adipisicing sunt aliquip. Consectetur dolor laboris non id veniam in reprehenderit mollit officia qui voluptate commodo sunt. Nulla mollit do voluptate pariatur duis id laborum aliquip consequat ex elit eiusmod sit adipisicing.',
+    details:
+      'Ipsum ex consectetur in officia dolore in in ea aliqua enim cillum cillum. Sunt culpa consequat ea duis adipisicing deserunt dolor esse cillum in labore in. Velit ullamco aliqua nulla ullamco. Ut velit reprehenderit laboris culpa laboris aliquip qui dolore. Occaecat est irure laborum adipisicing sunt aliquip. Consectetur dolor laboris non id veniam in reprehenderit mollit officia qui voluptate commodo sunt. Nulla mollit do voluptate pariatur duis id laborum aliquip consequat ex elit eiusmod sit adipisicing.',
     category: 'Advice',
     created_at: 'February, 2022',
     updated_at: 'August 1, 2022',
