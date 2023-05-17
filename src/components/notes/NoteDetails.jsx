@@ -19,6 +19,18 @@ export default function NoteDetails() {
 
   return (
     <div className='lg:col-start-3 lg:row-end-1 pt-6'>
+      <div className='mt-6 mb-6 flex flex-col-reverse justify-stretch space-y-4 space-y-reverse sm:flex-row-reverse sm:justify-end sm:space-x-3 sm:space-y-0 sm:space-x-reverse md:mt-0 md:flex-row md:space-x-3'>
+        <button
+          type='button'
+          className='inline-flex items-center justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'>
+          Edit Task
+        </button>
+        <button
+          type='button'
+          className='inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'>
+          New Task
+        </button>
+      </div>
       <h2 className='sr-only'>Summary</h2>
       <div className='rounded-lg bg-gray-50 shadow-sm ring-1 ring-gray-900/5'>
         <dl className='flex flex-wrap'>
@@ -82,7 +94,7 @@ export default function NoteDetails() {
         </dl>
         <div className='mt-6 border-t border-gray-900/5 px-6 py-6'>
           <a href='#' className='text-sm font-semibold leading-6 text-gray-900'>
-            Update Note <span aria-hidden='true'>&rarr;</span>
+            Something here <span aria-hidden='true'>&rarr;</span>
           </a>
         </div>
       </div>

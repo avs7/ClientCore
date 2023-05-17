@@ -1,7 +1,6 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { PlusIcon } from '@heroicons/react/20/solid'
 import { NavLink } from 'react-router-dom'
 
 function classNames(...classes) {
@@ -81,14 +80,6 @@ export default function Navbar() {
                 </div>
               </div>
               <div className='flex items-center'>
-                <div className='flex-shrink-0'>
-                  <button
-                    type='button'
-                    className='relative inline-flex items-center gap-x-1.5 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
-                    <PlusIcon className='-ml-0.5 h-5 w-5' aria-hidden='true' />
-                    New
-                  </button>
-                </div>
                 <div className='hidden md:ml-4 md:flex md:flex-shrink-0 md:items-center'>
                   <button
                     type='button'
