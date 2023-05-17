@@ -14,15 +14,7 @@ export default function TaskDetails() {
   const params = useParams()
   const [task, setTask] = useState({})
 
-  // Modal stuff
-  const { toggleModal } = useOutletContext()
-  const [modalType, setModalType] = useState('')
-  const modalElement = <TaskForm />
-
-  const handleEdit = () => {
-    toggleModal()
-    setModalType('Edit Task')
-  }
+  const { handleClick } = useOutletContext()
 
   useEffect(() => {
     setTask(sampleTasks.find(t => t.id === params.id))
@@ -35,12 +27,13 @@ export default function TaskDetails() {
           <button
             type='button'
             className='inline-flex items-center justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
-            onClick={handleEdit}>
+            onClick={() => handleClick('Edit Task', <TaskForm />)}>
             Edit Task
           </button>
           <button
             type='button'
-            className='inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'>
+            className='inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'
+            onClick={() => handleClick('New Task', <TaskForm />)}>
             New Task
           </button>
         </div>
@@ -117,7 +110,7 @@ export default function TaskDetails() {
           </div>
         </div>
       </div>
-      <ModalLayout modalElement={modalElement} modalType={modalType} />
+      <ModalLayout />
     </>
   )
 }

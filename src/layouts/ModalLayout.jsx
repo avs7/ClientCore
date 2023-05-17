@@ -2,15 +2,9 @@ import { Fragment } from 'react'
 import { useOutletContext } from 'react-router-dom'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
-import PropTypes from 'prop-types'
 
-ModalLayout.propTypes = {
-  modalElement: PropTypes.element,
-  modalType: PropTypes.string,
-}
-
-export default function ModalLayout({ modalElement, modalType }) {
-  const { modalOpen, toggleModal } = useOutletContext()
+export default function ModalLayout() {
+  const { modalOpen, toggleModal, modalType, modalElement } = useOutletContext()
 
   return (
     <Transition.Root show={modalOpen} as={Fragment}>
@@ -47,7 +41,7 @@ export default function ModalLayout({ modalElement, modalType }) {
                         <div className='ml-3 flex h-7 items-center'>
                           <button
                             type='button'
-                            className='rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                            className='rounded-md bg-white text-gray-400 hover:text-gray-500'
                             onClick={() => toggleModal()}>
                             <span className='sr-only'>Close panel</span>
                             <XMarkIcon className='h-6 w-6' aria-hidden='true' />

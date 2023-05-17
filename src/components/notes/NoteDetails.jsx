@@ -6,12 +6,16 @@ import {
 } from '@heroicons/react/20/solid'
 
 import { sampleNotes } from '../../data'
+import NoteForm from './NoteForm'
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useOutletContext } from 'react-router-dom'
+import ModalLayout from '../../layouts/ModalLayout'
 
 export default function NoteDetails() {
   const params = useParams()
   const [note, setNote] = useState({})
+
+  const { handleClick } = useOutletContext()
 
   useEffect(() => {
     setNote(sampleNotes.find(n => n.id === params.id))
@@ -22,13 +26,15 @@ export default function NoteDetails() {
       <div className='mt-6 mb-6 flex flex-col-reverse justify-stretch space-y-4 space-y-reverse sm:flex-row-reverse sm:justify-end sm:space-x-3 sm:space-y-0 sm:space-x-reverse md:mt-0 md:flex-row md:space-x-3'>
         <button
           type='button'
-          className='inline-flex items-center justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'>
-          Edit Task
+          className='inline-flex items-center justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
+          onClick={() => handleClick('Edit Note', <NoteForm />)}>
+          Edit Note
         </button>
         <button
           type='button'
-          className='inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'>
-          New Task
+          className='inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'
+          onClick={() => handleClick('New Note', <NoteForm />)}>
+          New Note
         </button>
       </div>
       <h2 className='sr-only'>Summary</h2>
@@ -98,6 +104,7 @@ export default function NoteDetails() {
           </a>
         </div>
       </div>
+      <ModalLayout />
     </div>
   )
 }
