@@ -4,17 +4,25 @@ import {
   ExclamationTriangleIcon,
   UserCircleIcon,
 } from '@heroicons/react/20/solid'
-
 import { sampleTasks } from '../../data'
-import { useParams } from 'react-router-dom'
+import { useParams, useOutletContext } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import ModalLayout from '../../layouts/ModalLayout'
-import useModal from '../../utilities/useModal'
+import TaskForm from './TaskForm'
 
 export default function TaskDetails() {
   const params = useParams()
   const [task, setTask] = useState({})
-  const [open, toggleModal] = useModal()
+
+  // Modal stuff
+  const { toggleModal } = useOutletContext()
+  const [modalType, setModalType] = useState('')
+  const modalElement = <TaskForm />
+
+  const handleEdit = () => {
+    toggleModal()
+    setModalType('Edit Task')
+  }
 
   useEffect(() => {
     setTask(sampleTasks.find(t => t.id === params.id))
@@ -27,7 +35,7 @@ export default function TaskDetails() {
           <button
             type='button'
             className='inline-flex items-center justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
-            onClick={() => toggleModal()}>
+            onClick={handleEdit}>
             Edit Task
           </button>
           <button
@@ -109,7 +117,7 @@ export default function TaskDetails() {
           </div>
         </div>
       </div>
-      <ModalLayout />
+      <ModalLayout modalElement={modalElement} modalType={modalType} />
     </>
   )
 }
