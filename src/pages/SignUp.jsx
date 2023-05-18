@@ -1,7 +1,30 @@
+import axios from 'axios'
+
 export default function SignUp() {
+  const testLogin = () => {
+    axios
+      .post('/api/auth/login', {
+        email: 'as@gmail.com',
+        password: 'password',
+      })
+      .then(function (res) {
+        console.log(res)
+      })
+      .catch(function (err) {
+        console.log(err)
+      })
+  }
+
   return (
     <>
       <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8'>
+        <button
+          type='button'
+          className='rounded bg-white px-2 py-1 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
+          onClick={testLogin}>
+          Test API
+        </button>
+
         <div className='sm:mx-auto sm:w-full sm:max-w-sm'>
           <img
             className='mx-auto h-10 w-auto'
