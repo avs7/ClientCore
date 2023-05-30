@@ -1,14 +1,34 @@
+import { useState } from 'react'
 import axios from 'axios'
 
 export default function SignUp() {
-  const testLogin = () => {
+  const [newUser, setNewUser] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+  })
+
+  function handleChange(e) {
+    setNewUser(prev => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      }
+    })
+  }
+
+  const createUser = () => {
     axios
-      .post('/api/auth/login', {
-        email: 'as@gmail.com',
-        password: 'password',
+      .post('/api/signup', {
+        first_name: newUser.firstName,
+        last_name: newUser.lastName,
+        email: newUser.email,
+        password: newUser.password,
       })
       .then(function (res) {
-        console.log(res)
+        console.log('data sent')
+        console.log(res.data)
       })
       .catch(function (err) {
         console.log(err)
@@ -18,26 +38,14 @@ export default function SignUp() {
   return (
     <>
       <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8'>
-        <button
-          type='button'
-          className='rounded bg-white px-2 py-1 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
-          onClick={testLogin}>
-          Test API
-        </button>
-
         <div className='sm:mx-auto sm:w-full sm:max-w-sm'>
-          <img
-            className='mx-auto h-10 w-auto'
-            src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
-            alt='Your Company'
-          />
           <h2 className='mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900'>
             Sign up for your free account
           </h2>
         </div>
 
         <div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
-          <form className='space-y-6' action='#' method='POST'>
+          <form className='space-y-6'>
             <div>
               <label
                 htmlFor='first_name'
@@ -46,29 +54,31 @@ export default function SignUp() {
               </label>
               <div className='mt-2'>
                 <input
-                  id='first_name'
-                  name='first_name'
+                  onChange={handleChange}
+                  value={newUser.firstName}
+                  id='firstName'
+                  name='firstName'
                   type='text'
-                  autoComplete='First Name'
                   required
-                  className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                  className='pl-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
                 />
               </div>
             </div>
             <div>
               <label
-                htmlFor='last_name'
+                htmlFor='lastName'
                 className='block text-sm font-medium leading-6 text-gray-900'>
                 Last Name
               </label>
               <div className='mt-2'>
                 <input
-                  id='last_name'
-                  name='last_name'
+                  onChange={handleChange}
+                  value={newUser.lastName}
+                  id='lastName'
+                  name='lastName'
                   type='text'
-                  autoComplete='Last Name'
                   required
-                  className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                  className='pl-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
                 />
               </div>
             </div>
@@ -80,12 +90,13 @@ export default function SignUp() {
               </label>
               <div className='mt-2'>
                 <input
+                  onChange={handleChange}
+                  value={newUser.email}
                   id='email'
                   name='email'
                   type='email'
-                  autoComplete='email'
                   required
-                  className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                  className='pl-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
                 />
               </div>
             </div>
@@ -100,18 +111,20 @@ export default function SignUp() {
               </div>
               <div className='mt-2'>
                 <input
+                  onChange={handleChange}
+                  value={newUser.password}
                   id='password'
                   name='password'
                   type='password'
-                  autoComplete='current-password'
                   required
-                  className='block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                  className='pl-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
                 />
               </div>
             </div>
 
             <div>
               <button
+                onClick={createUser}
                 type='submit'
                 className='flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
                 Sign up
