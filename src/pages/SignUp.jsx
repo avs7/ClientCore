@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 export default function SignUp() {
   const [newUser, setNewUser] = useState({
@@ -18,6 +19,8 @@ export default function SignUp() {
     })
   }
 
+  const navigate = useNavigate()
+
   const createUser = () => {
     axios
       .post('/api/signup', {
@@ -33,6 +36,7 @@ export default function SignUp() {
       .catch(function (err) {
         console.log(err)
       })
+    navigate('/login')
   }
 
   return (
