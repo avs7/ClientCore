@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom'
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 export default function Dashboard() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -18,6 +19,7 @@ export default function Dashboard() {
 
   return (
     <div>
+      <Header />
       <Navbar />
       <div className='mx-auto max-w-7xl sm:px-6 lg:px-8 p-2'>
         <Outlet
